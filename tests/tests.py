@@ -1,5 +1,8 @@
 import unittest
-from arvd_ap import rvd_ap
+from arvd_ap import rvd_ap, tell_it
+from io import StringIO
+import sys
+
 
 class TestYourCode(unittest.TestCase):
     @classmethod
@@ -23,6 +26,17 @@ class TestYourCode(unittest.TestCase):
         # Add additional specific tests for SomeClass
         self.some_instance.some_other_method()
         self.assertTrue(self.some_instance.some_state, "some_state is not as expected after calling some_other_method")
+
+    def test_tell_it(self):
+        # Capture the printed output of tell_it()
+        captured_output = StringIO()
+        sys.stdout = captured_output
+        tell_it()
+        sys.stdout = sys.__stdout__
+        
+        # Verify the output
+        self.assertEqual(captured_output.getvalue().strip(), "Test for PyPI - GitHub Integration Successfull")
+
 
 if __name__ == '__main__':
     unittest.main()
