@@ -230,5 +230,9 @@ def div_it(divident, divisor):
     """
     return divident % divisor == 0
 
+
+def tell_it():
+  print("Test for PyPI - GitHub Integration Successfull")
+
 def tell_it():
   print("Test for PyPI - GitHub Integration Successfull")
