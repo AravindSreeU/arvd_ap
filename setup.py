@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='arvd_ap',
-    version='0.1.0',
+    version='0.2.0',  # Incremented version
     packages=find_packages(),
     install_requires=[
     ],
