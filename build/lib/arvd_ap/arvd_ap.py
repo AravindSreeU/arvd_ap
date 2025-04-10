@@ -229,3 +229,6 @@ def div_it(divident, divisor):
         bool: True if the dividend is divisible by the divisor, False otherwise.
     """
     return divident % divisor == 0
+
+def tell_it():
+  print("Test for PyPI - GitHub Integration Successfull")
