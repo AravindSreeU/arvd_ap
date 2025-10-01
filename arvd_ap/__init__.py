@@ -1,5 +1,3 @@
-# arvd_ap/__init__.py
-
 """
 This module provides a collection of utility functions for numerical and string operations.
 Functions included:
@@ -20,6 +18,8 @@ Functions included:
     - div_it(): Divides two numbers and returns the result.
     - tell_it(): Provides information or description about a given input.
 """
+
+# arvd_ap/__init__.py
 
 from .arvd_ap import *
 
